@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "network.sov.app",
+    "sha256_cert_fingerprints":
+    ["62:71:FF:79:7A:88:49:D3:5F:C9:8C:E1:C5:A1:F0:FA:CC:3D:73:99:8D:37:5D:40:FC:CB:81:ED:14:17:C3:E8", "3C:64:64:00:28:37:B6:EB:A7:C4:1F:9D:AC:71:AE:C6:00:40:47:DD:29:35:5D:11:28:31:2E:DA:5D:23:B7:A5"]
+  }
+}]
