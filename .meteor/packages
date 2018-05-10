@@ -21,3 +21,4 @@ kadira:flow-router
 force-ssl
 blaze
 kadira:blaze-layout
+meteorhacks:picker
