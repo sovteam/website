@@ -1,9 +1,13 @@
 <template name='PostLogs'>
 	<h1>Post Logs</h1>
 	{{#each logs}}
-		<p>APP: {{app}}</p>
-		<p>Stamp: {{stamp}}</p>
-		<p>Error: {{error}}</p>
+		<p><strong>APP</strong>: {{app}}</p>
+		<p><strong>Device</strong>: {{device}}</p>
+		<p><strong>OS</strong>: {{os}}</p>
+		<p><strong>Stamp</strong>: {{stamp}}</p>
+		<p><strong>Exception</strong>: {{exception}}</p>
+		<p><strong>Message</strong>: {{message}}</p>
+		<p style="white-space: pre-wrap"><strong>StackTrace</strong>: {{stackTrace}}</p>
 		<br>
 	{{/each}}
 </template>
