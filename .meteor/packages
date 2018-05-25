@@ -22,3 +22,5 @@ force-ssl
 blaze
 kadira:blaze-layout
 meteorhacks:picker
+fourseven:scss@3.13.0
+poetic:materialize-scss@1.97.6_1

@@ -1,1 +1,36 @@
-/* CSS declarations go here */
+html {height:100%} 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body, html {
+  min-height: 100% !important;
+	color: #212121;
+ 	font-family: 'PT Sans', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+strong {
+  font-weight: 600 !important;
+}
+
+.titillium {
+  font-family: "Titillium Web";
+}
+
+.bold {
+	font-weight: 600 !important;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;;
+}
