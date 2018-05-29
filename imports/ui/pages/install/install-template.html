@@ -1,14 +1,15 @@
 <template name="Install">
-  <div class='container'>
-    <div class='row'>
+  <div class='container valign-wrapper' style='height: 100%;left: 0;right: 0;top: 0;position: absolute;'>
+    <div class='row' style='margin: auto;'>
       <div class='col s12'>
         <div class='center'>
-          <h1 class='titillium'>Congrats!</h1>
-          <p class='flow-text'>You've received your first sovereign link. Install SOV app to open it:</p>
-          <div class='section'>
-            <img class='responsive-img' style='max-width:100px' src='/images/logo.png'>
-            <p><a href="{{playstoreLink}}" class="waves-effect waves-light btn green bold">install</a></p>
-          </div>
+          <img class='responsive-img' style='max-width:100px;margin-top:40px' src='/images/logo.png'>
+          <p class='flow-text'>You have received a sovereign link.<br>To open it, click on the button below and install the Sov app.</p>
+          <p class='section'>
+            <a href="{{playstoreLink}}" class="waves-effect waves-light">
+              <img class='responsive-img' src='/images/play_store_en.png'>
+            </a>
+          </p>
         </div>
       </div>
     </div>
