@@ -5,7 +5,8 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout'
 import '/imports/ui/layouts/app/app-layout-controller.js'
 import '/imports/ui/pages/home/home-controller.js'
 import '/imports/ui/pages/logs/logs-controller.js'
-import '/imports/ui/pages/install/install-controller.js'
+import '/imports/ui/pages/link/link-controller.js'
+import '/imports/ui/pages/404/404-template.html'
 
 FlowRouter.route('/', {
     name: 'Home',
@@ -23,10 +24,16 @@ FlowRouter.route('/logs', {
     }
 })
 
-FlowRouter.route('/install/:referrer', {
-    name: 'Install',
+FlowRouter.route('/link/:referrer', {
+    name: 'Link',
     fastRender: true,
     action: function () {
-        BlazeLayout.render('AppLayout', { content: 'Install' })
+        BlazeLayout.render('AppLayout', { content: 'Link' })
     }
 })
+
+FlowRouter.notFound = {
+    action: function() {
+        BlazeLayout.render('AppLayout', { content: 'NotFound404' }); 
+    }
+};
