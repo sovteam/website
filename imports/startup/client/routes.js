@@ -9,12 +9,21 @@ import '/imports/ui/pages/link/link-controller.js'
 import '/imports/ui/pages/404/404-template.html'
 
 FlowRouter.route('/', {
+  triggersEnter: [function (context, redirect) {
+    window.location = 'https://github.com/sovteam/docs/wiki'
+  }],
+  action: function(_params) {
+    throw new Error("this should not get called");
+  }
+})
+
+/*FlowRouter.route('/', {
     name: 'Home',
     fastRender: true,
     action: function () {
         BlazeLayout.render('AppLayout', { content: 'Home' })
     }
-})
+})*/
 
 FlowRouter.route('/logs', {
     name: 'PostLogs',
